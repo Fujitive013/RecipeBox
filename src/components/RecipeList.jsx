@@ -5,10 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Clock, Users, Heart, ImageOff } from "lucide-react";
 
-/**
- * Individual Recipe Card Component
- * Handles its own image loading state
- */
 const RecipeCard = ({ recipe, onSelect, isFavorite, onToggleFavorite }) => {
     const [imageLoading, setImageLoading] = useState(true);
     const [imageError, setImageError] = useState(false);
